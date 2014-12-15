@@ -135,6 +135,7 @@
 				-o-transition: 0.2s ease-in-out 0s;
 				transition: 0.2s ease-in-out 0s;
 				position:absolute;
+				z-index:9999;
 			}
 
 				nav.menucor {
