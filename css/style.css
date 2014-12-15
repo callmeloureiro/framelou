@@ -134,6 +134,7 @@
 				-webkit-transition: 0.2s ease-in-out 0s;
 				-o-transition: 0.2s ease-in-out 0s;
 				transition: 0.2s ease-in-out 0s;
+				position:absolute;
 			}
 
 				nav.menucor {

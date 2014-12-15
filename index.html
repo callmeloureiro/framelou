@@ -13,7 +13,7 @@
 </head>
 <body>
 	<header>
-		<nav class="fixed">
+		<nav>
 			<div class="main">
 				<div class="column">
 					<div class="col s12 nomargin">
@@ -94,9 +94,9 @@
     var nav = $('nav');
     $(window).scroll(function () {
     if ($(this).scrollTop() > screen.height-64) {
-    nav.addClass("menucor");
+    nav.addClass("fixed menucor");
     } else {
-    nav.removeClass("menucor");
+    nav.removeClass("fixed menucor");
     }
     });
   });
