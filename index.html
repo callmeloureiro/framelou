@@ -91,9 +91,8 @@
   <script>
   jQuery("document").ready(function($){
     var nav = $('nav');
-    var height = screen.height-64;
     $(window).scroll(function () {
-    if ($(this).scrollTop() > height) {
+    if ($(this).scrollTop() > screen.height) {
     nav.addClass("menucor");
     } else {
     nav.removeClass("menucor");
