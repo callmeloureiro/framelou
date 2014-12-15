@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Framework do Loureiro</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<style> [data-sr] { visibility: hidden; } </style>
+</head>
+<body>
+	<header>
+		<nav class="fixed">
+			<div class="main">
+				<div class="column">
+					<div class="col s12 nomargin">
+							<h1 id="logo"><a href="">ML</a></h1>
+							<ul class="right">
+								<li>
+									<a href="">Teste</a>
+								</li>
+								<li>
+									<a href="">Teste</a>
+								</li>
+								<li>
+									<a href="">Teste</a>
+								</li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section id="banner" class="section margem">
+			<div class="main">
+				<div class="column">
+					<div class="banner">
+						<h1 class="light center">Framelou!</h1>
+						<h4 class="light center">Um moderno framework utilizando <br>HTML5 + <strong>responsividade.</strong></h4>
+						<small class="light center full">criado por: <strong><a href="">Matheus Loureiro</strong></a></small>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="chamada" class="main margem">
+			<div class="column">
+				<strong class="titulogrande full center">Poupe tempo. Isso é importante.</strong>
+				<article class="col s12 m6 center" data-sr="wait 0.3s enter left">
+					<i class="fa fa-code"></i>
+					<strong class="full titulo">Agilize a escrita do seu código</strong>
+					<p class="left">Com uma boa sintaxe, você não irá precisar ficar consultado o css todo tempo, com pouco tempo você estará escrevendo de olhos fechados.</p>
+				</article>
+				<article class="col s12 m6 center" data-sr="wait 0.6s enter right">
+					<i class="fa fa-cog fa-spin"></i>
+					<strong class="full titulo">jQuery e ScrollReveal</strong>
+					<p class="left">Tenha as duas versões minificadas destas maravilhosas bibliotecas. jQuery na versão 1.9.1 e ScrollReveal para adicionar efeitos ao seu front-end.</p>
+				</article>
+				<article class="col s12 m6 center" data-sr="wait 0.9s enter left">
+					<i class="fa fa-mobile"></i>
+					<strong class="full titulo">Layout Fluido</strong>
+					<p class="left">Tenha as duas versões minificadas destas maravilhosas bibliotecas. jQuery na versão 1.9.1 e ScrollReveal para adicionar efeitos ao seu front-end.</p>
+				</article>
+				<article class="col s12 m6 center" data-sr="wait 1.2s enter right">
+					<i class="fa fa-code"></i>
+					<strong class="full titulo">jQuery e ScrollReveal</strong>
+					<p class="left">Tenha as duas versões minificadas destas maravilhosas bibliotecas. jQuery na versão 1.9.1 e ScrollReveal para adicionar efeitos ao seu front-end.</p>
+				</article>
+				<!-- <article class="col s12 m4 center" data-sr="wait 0.3s enter left">
+					<i class="fa fa-flag"></i>
+					<strong class="full titulo">Agilize a escrita do seu código</strong>
+					<p class="left"> Fonte impressionante que dá-lhe ícones vetoriais escaláveis que pode ser personalizado - tamanho, cor, sombra, e qualquer coisa que pode ser feito com o poder do CSS. </p>				
+				</article>
+				<article class="col s12 m4 center" data-sr="wait 0.6s enter top">
+					<i class="fa fa-cog fa-spin"></i>
+					<strong class="full titulo">ScrollReveal.js</strong>
+					<p class="left">Um poderoso javascript capaz de embelezar seu front-end com transições fantásticas e assim conquistar os olhos de quem acessar!</p>				
+				</article>
+				<article class="col s12 m4 center" data-sr="wait 0.9s enter right">
+					<i class="fa fa-mobile"></i>
+					<strong class="full titulo">Layout Responsive</strong>
+					<p class="left">Utilizando o sistema de grid com 12 colunas, o <strong>FRAMELOU</strong> disponibiliza um layout com tamanho de 1280px.</p>				
+				</article> -->
+			</div>
+		</section>
+	</main>
+	<footer>
+	</footer>
+	<script src="js/scrollreveal.min.js"></script>
+	<script type="text/javascript">
+    (function($) {
+
+      'use strict';
+
+      window.sr= new scrollReveal({
+        reset: true,
+        move: '50px',
+        mobile: true
+      });
+
+    })();
+	</script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script>
+  jQuery("document").ready(function($){
+    var nav = $('nav');
+    var height = screen.height-64;
+    $(window).scroll(function () {
+    if ($(this).scrollTop() > height) {
+    nav.addClass("menucor");
+    } else {
+    nav.removeClass("menucor");
+    }
+    });
+  });
+  </script>
+</body>
+</html>
