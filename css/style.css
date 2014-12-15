@@ -1,0 +1,714 @@
+/* Desenvolvido por: Matheus Loureiro 
+*  http://www.matheusloureiro.com.br
+*	 Framelou
+*/
+
+@charset "UTF-8";
+
+	body {
+		margin:0;
+		padding:0;
+	}
+
+	*, object, img, a {
+		outline:none;
+		border:none;
+	}
+
+	*, *:before, *:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+			
+	ul, 
+	ul li, 
+	ul li ul, 
+	ul li ul li {
+		list-style:none;
+		text-decoration:none;
+	}
+
+	.clearfix {
+		clear:both;
+	}
+
+	/**************************************************************************************/
+
+	/* Títutlos */
+
+		.titulo {
+			font-size:1.4rem;
+		}
+
+		.titulogrande {
+			font-size:2.2rem;
+			margin-bottom:4rem;
+		}
+
+	/* Fim Títulos */
+
+	/**************************************************************************************/
+
+	/* Ícones */
+
+	/* Fim Ícones */
+
+	/**************************************************************************************/
+
+	/* Alinhamentos */
+		
+		.alignleft {
+			margin:0px 15px 0px 0px;
+			padding:0px;
+			float:left;
+		}
+
+		.alignright {
+			margin:0px 0px 0px 15px;
+			padding:0px;
+			float:right;
+		}
+
+		.center {
+			text-align:center;
+			vertical-align: middle;
+		}
+			.full {
+				display:block;
+			}
+
+		.left {
+			float:left;
+		}
+
+			p.left,
+			strong.left,
+			small.left,
+			pre.left {
+				text-align:left;
+			}
+
+		.right {
+			float:right;
+		}
+
+	/* Fim Alinhamentos */
+
+	/**************************************************************************************/
+
+	/* TAGS */
+	
+		a {
+			text-decoration:none;
+			color:inherit;
+		}
+
+			a:active, a:hover {
+			  outline: 0px none;
+			}
+
+		article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+			display:block;
+		}
+
+	/* Fim TAGS */
+
+	/**************************************************************************************/
+
+	/* Personalização do site */
+
+		html {
+			padding:4rem 0 0;
+			height:100%;
+		}
+		body {
+			height:100%;
+		}
+	
+		/* Header */
+			
+			nav {
+				background:#FFF;
+				-webkit-transition: 0.2s ease-in-out 0s;
+				-o-transition: 0.2s ease-in-out 0s;
+				transition: 0.2s ease-in-out 0s;
+			}
+
+				nav.menucor {
+					background:#1e1e1e;
+					color:#FFF;
+				}
+
+				nav.menucor ul a:hover {
+					background:#fff;
+					color:#1e1e1e;
+				}
+
+		/* Fim Header */
+
+		/* Meio */
+
+		main {
+			height:100%;
+			z-index:9999;
+		}
+
+		.content {
+			height:400px;
+			background:#000;
+		}
+
+			#banner {
+				background:#1e1e1e;
+				color:#FFF;
+				height:100%;
+				position:relative;
+			}
+
+				.banner {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					-moz-transform: translate(-50%, -50%);
+					-webkit-transform: translate(-50%, -50%);
+					-o-transform: translate(-50%, -50%);
+				}
+
+				#banner h4 {
+					margin-bottom:40px;
+				}
+
+			#chamada i.fa {
+				font-size:3rem;
+				margin-bottom:0.5rem;
+			}
+
+			#code {
+				padding:5rem 0;
+				background:#F2F3F5;
+				color:#1e1e1e;
+				font-size:2.2rem;
+			}
+
+		/* Fim Meio */
+
+		/* Footer */
+
+
+
+		/* Fim Footer */
+
+	/* Fim Personalização do site */
+
+	/**************************************************************************************/
+
+	/* Wordpress */
+		
+		/* Page */
+
+			/* Page Contato */
+
+			/* Fim Page Contato */
+
+		/* Fim Page */
+
+		/* Single */
+
+		/* Fim Single */
+
+		/* Category */
+
+		/* Fim Category */
+
+	/* Fim Wordpress */
+
+	/**************************************************************************************/
+
+	/* Responsive */
+
+		html {
+		  line-height: 1.5;
+		  font-family: 'Open Sans', sans-serif;
+		  font-weight: normal;
+		  color:#1e1e1e;
+		}
+		@media only screen and (min-width: 0) {
+		  html {
+		    font-size: 14px;
+		  }
+		}
+		@media only screen and (min-width: 992px) {
+		  html {
+		    font-size: 14.5px;
+		  }
+		}
+		@media only screen and (min-width: 1200px) {
+		  html {
+		    font-size: 15px;
+		  }
+		}
+	
+		/* Tamanhos */
+			
+			.main {
+				padding:0 1rem;
+				margin:0 auto;
+				max-width: 1280px;
+				width:90%;
+			}
+				.main-full {
+					padding:0 0.5rem;
+					width:100%;
+				}
+			@media only screen and (min-width: 600px) {
+			  .main {
+			    width: 85%;
+			  }
+			}
+			@media only screen and (min-width: 992px) {
+			  .main {
+			    width: 70%;
+			  }
+			}
+
+			.section {
+				padding-top:1rem;
+				padding-bottom:1rem;
+			}
+
+			.main .column {
+				margin-left:-0.5rem;
+				margin-right:-0.5rem;
+			}
+				.column {
+					margin-left:auto;
+					margin-right:auto;
+					margin-bottom:0px;
+				}
+					.column:after {
+						content:"";
+						display:table;
+						clear:both;
+					}
+
+				.column .col {
+				  -webkit-transition: all 0.3s;
+				  -moz-transition: all 0.3s;
+				  -o-transition: all 0.3s;
+				  -ms-transition: all 0.3s;
+				  transition: all 0.3s;
+				  float: left;
+				  -webkit-box-sizing: border-box;
+				  -moz-box-sizing: border-box;
+				  box-sizing: border-box;
+				  padding:0 0.5rem;
+				  margin: 0.5rem 0;
+				}
+				.column .col.nomargin {
+					margin:0;
+				}
+				.column .col.s1 {
+				  width: 8.33333%;
+				  margin-left: 0;
+				}
+				.column .col.s2 {
+				  width: 16.66667%;
+				  margin-left: 0;
+				}
+				.column .col.s3 {
+				  width: 25%;
+				  margin-left: 0;
+				}
+				.column .col.s4 {
+				  width: 33.33333%;
+				  margin-left: 0;
+				}
+				.column .col.s5 {
+				  width: 41.66667%;
+				  margin-left: 0;
+				}
+				.column .col.s6 {
+				  width: 50%;
+				  margin-left: 0;
+				}
+				.column .col.s7 {
+				  width: 58.33333%;
+				  margin-left: 0;
+				}
+				.column .col.s8 {
+				  width: 66.66667%;
+				  margin-left: 0;
+				}
+				.column .col.s9 {
+				  width: 75%;
+				  margin-left: 0;
+				}
+				.column .col.s10 {
+				  width: 83.33333%;
+				  margin-left: 0;
+				}
+				.column .col.s11 {
+				  width: 91.66667%;
+				  margin-left: 0;
+				}
+				.column .col.s12 {
+				  width: 100%;
+				  margin-left: 0;
+				}
+				.column .col.offset-s1 {
+				  margin-left: 8.33333%;
+				}
+				.column .col.offset-s2 {
+				  margin-left: 16.66667%;
+				}
+				.column .col.offset-s3 {
+				  margin-left: 25%;
+				}
+				.column .col.offset-s4 {
+				  margin-left: 33.33333%;
+				}
+				.column .col.offset-s5 {
+				  margin-left: 41.66667%;
+				}
+				.column .col.offset-s6 {
+				  margin-left: 50%;
+				}
+				.column .col.offset-s7 {
+				  margin-left: 58.33333%;
+				}
+				.column .col.offset-s8 {
+				  margin-left: 66.66667%;
+				}
+				.column .col.offset-s9 {
+				  margin-left: 75%;
+				}
+				.column .col.offset-s10 {
+				  margin-left: 83.33333%;
+				}
+				.column .col.offset-s11 {
+				  margin-left: 91.66667%;
+				}
+				.column .col.offset-s12 {
+				  margin-left: 100%;
+				}
+				@media only screen and (min-width: 600px) {
+				  .column .col.m1 {
+				    width: 8.33333%;
+				    margin-left: 0;
+				  }
+				  .column .col.m2 {
+				    width: 16.66667%;
+				    margin-left: 0;
+				  }
+				  .column .col.m3 {
+				    width: 25%;
+				    margin-left: 0;
+				  }
+				  .column .col.m4 {
+				    width: 33.33333%;
+				    margin-left: 0;
+				  }
+				  .column .col.m5 {
+				    width: 41.66667%;
+				    margin-left: 0;
+				  }
+				  .column .col.m6 {
+				    width: 50%;
+				    margin-left: 0;
+				  }
+				  .column .col.m7 {
+				    width: 58.33333%;
+				    margin-left: 0;
+				  }
+				  .column .col.m8 {
+				    width: 66.66667%;
+				    margin-left: 0;
+				  }
+				  .column .col.m9 {
+				    width: 75%;
+				    margin-left: 0;
+				  }
+				  .column .col.m10 {
+				    width: 83.33333%;
+				    margin-left: 0;
+				  }
+				  .column .col.m11 {
+				    width: 91.66667%;
+				    margin-left: 0;
+				  }
+				  .column .col.m12 {
+				    width: 100%;
+				    margin-left: 0;
+				  }
+				  .column .col.offset-m1 {
+				    margin-left: 8.33333%;
+				  }
+				  .column .col.offset-m2 {
+				    margin-left: 16.66667%;
+				  }
+				  .column .col.offset-m3 {
+				    margin-left: 25%;
+				  }
+				  .column .col.offset-m4 {
+				    margin-left: 33.33333%;
+				  }
+				  .column .col.offset-m5 {
+				    margin-left: 41.66667%;
+				  }
+				  .column .col.offset-m6 {
+				    margin-left: 50%;
+				  }
+				  .column .col.offset-m7 {
+				    margin-left: 58.33333%;
+				  }
+				  .column .col.offset-m8 {
+				    margin-left: 66.66667%;
+				  }
+				  .column .col.offset-m9 {
+				    margin-left: 75%;
+				  }
+				  .column .col.offset-m10 {
+				    margin-left: 83.33333%;
+				  }
+				  .column .col.offset-m11 {
+				    margin-left: 91.66667%;
+				  }
+				  .column .col.offset-m12 {
+				    margin-left: 100%;
+				  }
+				}
+				@media only screen and (min-width: 992px) {
+				  .column .col.l1 {
+				    width: 8.33333%;
+				    margin-left: 0;
+				  }
+				  .column .col.l2 {
+				    width: 16.66667%;
+				    margin-left: 0;
+				  }
+				  .column .col.l3 {
+				    width: 25%;
+				    margin-left: 0;
+				  }
+				  .column .col.l4 {
+				    width: 33.33333%;
+				    margin-left: 0;
+				  }
+				  .column .col.l5 {
+				    width: 41.66667%;
+				    margin-left: 0;
+				  }
+				  .column .col.l6 {
+				    width: 50%;
+				    margin-left: 0;
+				  }
+				  .column .col.l7 {
+				    width: 58.33333%;
+				    margin-left: 0;
+				  }
+				  .column .col.l8 {
+				    width: 66.66667%;
+				    margin-left: 0;
+				  }
+				  .column .col.l9 {
+				    width: 75%;
+				    margin-left: 0;
+				  }
+				  .column .col.l10 {
+				    width: 83.33333%;
+				    margin-left: 0;
+				  }
+				  .column .col.l11 {
+				    width: 91.66667%;
+				    margin-left: 0;
+				  }
+				  .column .col.l12 {
+				    width: 100%;
+				    margin-left: 0;
+				  }
+				  .column .col.offset-l1 {
+				    margin-left: 8.33333%;
+				  }
+				  .column .col.offset-l2 {
+				    margin-left: 16.66667%;
+				  }
+				  .column .col.offset-l3 {
+				    margin-left: 25%;
+				  }
+				  .column .col.offset-l4 {
+				    margin-left: 33.33333%;
+				  }
+				  .column .col.offset-l5 {
+				    margin-left: 41.66667%;
+				  }
+				  .column .col.offset-l6 {
+				    margin-left: 50%;
+				  }
+				  .column .col.offset-l7 {
+				    margin-left: 58.33333%;
+				  }
+				  .column .col.offset-l8 {
+				    margin-left: 66.66667%;
+				  }
+				  .column .col.offset-l9 {
+				    margin-left: 75%;
+				  }
+				  .column .col.offset-l10 {
+				    margin-left: 83.33333%;
+				  }
+				  .column .col.offset-l11 {
+				    margin-left: 91.66667%;
+				  }
+				  .column .col.offset-l12 {
+				    margin-left: 100%;
+				  }
+				}
+
+		/* Fim Tamanhos */
+
+		/* Margens */
+
+		.margem {
+			margin-bottom:60px;
+		}
+
+		/* Fim Margens */
+
+	/* Fim Responsive */
+
+	/**************************************************************************************/
+		
+	/* Personalização */
+
+		main > * {
+			overflow:hidden;
+		}
+
+		/* Menu */
+
+			nav {
+				width:100%;
+				line-height:64px;
+			}
+
+				nav.fixed {
+					position:fixed;
+					z-index:999;
+					top:0 !important;
+				}
+
+				nav .main {
+					position: relative;
+					height: 100%;
+				}
+			
+				nav ul,
+				nav h1 {
+					margin:0;
+					padding:0;
+				}
+
+					nav #logo {
+						position: absolute;
+						display: inline-block;
+						font-size: 1.6rem;
+						padding: 0px;
+					}
+
+						nav #logo a {
+							color:inherit;
+						}
+
+						nav #logo.right {
+							right:0;
+						}
+
+					nav ul li {
+						padding: 0px;
+						transition: background-color 0.3s ease 0s;
+						float: left;
+					}
+
+						nav ul li a {
+							padding:0 15px;
+							display:block;
+							font-size: 1rem;
+							color:inherit;
+							-webkit-transition: 0.2s ease-in-out 0s;
+							-o-transition: 0.2s ease-in-out 0s;
+							transition: 0.2s ease-in-out 0s;
+						}
+
+							nav ul a:hover {
+								background:#1e1e1e;
+								color:#FFF;
+							}
+
+		/* Fim Menu */
+
+		h1,h2,h3,h4,h5,h6{
+			font-weight:400
+		}
+
+		h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
+			font-weight:inherit
+		}
+
+		h1{
+			font-size:4.2rem;
+			line-height:4.62rem;
+			margin:2.1rem 0 1.68rem 0
+		}
+
+		h2{
+			font-size:3.56rem;
+			line-height:3.916rem;
+			margin:1.78rem 0 1.424rem 0
+		}
+
+		h3{
+			font-size:2.92rem;
+			line-height:3.212rem;
+			margin:1.46rem 0 1.168rem 0
+		}
+
+		h4{
+			font-size:2.28rem;
+			line-height:2.508rem;
+			margin:1.14rem 0 0.912rem 0
+		}
+
+		h5{
+			font-size:1.64rem;
+			line-height:1.804rem;
+			margin:0.82rem 0 0.656rem 0
+		}
+
+		h6{
+			font-size:1rem;
+			line-height:1.1rem;
+			margin:0.5rem 0 0.4rem 0
+		}
+
+		em{
+			font-style:italic
+		}
+
+		strong{
+			font-weight:500
+		}
+
+		small{
+			font-size:75%
+		}
+
+		.light{
+			font-weight:300
+		}
+
+	/* Fim Personalização */
+
+	/**************************************************************************************/
+
