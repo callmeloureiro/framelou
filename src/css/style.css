@@ -44,6 +44,7 @@
 		.titulogrande {
 			font-size:2.2rem;
 			margin-bottom:4rem;
+			margin-top:0;
 		}
 
 	/* Fim Títulos */
@@ -185,12 +186,10 @@
 				margin-bottom:0.5rem;
 			}
 
-			#code {
-				padding:5rem 0;
-				background:#F2F3F5;
-				color:#1e1e1e;
-				font-size:2.2rem;
-			}
+				#chamada article > h2 {
+					margin:0;
+					padding:0;
+				}
 
 		/* Fim Meio */
 
